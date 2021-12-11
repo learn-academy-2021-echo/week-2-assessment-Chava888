@@ -8,10 +8,11 @@
 // --------------------1) What will this log?
 
 var cohort = "Echo 2021"
-// console.log(cohort.split(""))
+console.log(cohort.split(""))
 
-// a) Your answer:
-// b) Verify and explain:
+// a) Your answer: ["E","c","h","o"," ","2","0","2","1"]
+// b) Verify and explain: Correct. The reason for the output is the split() function splits a string into an array and seperates the string
+// accoring to the input argument. For this case the input argument was "" - no space, therefore separate the string into individual characters.
 
 
 // --------------------2) What will this log?
@@ -19,28 +20,31 @@ var cohort = "Echo 2021"
 const greeter = (name) => {
   `Hello, ${name}!`
 }
-// console.log(greeter("LEARN Student"))
+console.log(greeter("LEARN Student"))
 
-// a) Your answer:
-// b) Verify and explain:
+// a) Your answer: "Hello, LEARN Student!"
+// b) Verify and explain: Wrong, forgot the return so silly on my part. The result was undefined because the function has no return, so the function will not return anything to console.log().
+
 
 
 // --------------------3) What will this log?
 
 var multBy2 = [4, 5, 6, 7, 8].map(value => value * 2)
-// console.log(multBy2)
+console.log(multBy2)
 
-// a) Your answer:
-// b) Verify and explain:
+// a) Your answer: [8, 10, 12, 14, 16]
+// b) Verify and explain: Correct. The .map() is multiplying every element of the array by a factor of 2. The input function inside .map has an implict arrow function therefore return is not required.
+//Implicit arrow function is ()=>() syntax for one expression, it is implicitly stated the return.
 
 
 // --------------------4) What will this log?
 
 var onlyOdds = [11, 12, 13, 14, 15].filter(value => value % 2 !== 0)
-// console.log(onlyOdds)
+console.log(onlyOdds)
 
-// a) Your answer:
-// b) Verify and explain:
+// a) Your answer: [11, 13, 15]
+// b) Verify and explain: Correct. The .filter() is filtering out the even numbers value % 2 !== 0. The input function inside .filter has an implict arrow function therefore return is not required.
+//Implicit arrow function is ()=>() syntax for one expression, it is implicitly stated the return.
 
 
 // --------------------5) What will this log?
@@ -60,10 +64,10 @@ var myCodingSkills = {
 // --------------------STRETCH: What will this log?
 
 class Learn {
-  constructor(name){
+  constructor(name) {
     this.student = name,
-    this.cohort = "Delta",
-    this.year = 2021
+      this.cohort = "Delta",
+      this.year = 2021
   }
 }
 var learnStudent = new Learn("George")
