@@ -55,10 +55,11 @@ var myCodingSkills = {
   databases: "PostgreSQL",
   versionControl: "GitHub"
 }
-// console.log(myCodingSkills.languages[0])
+console.log(myCodingSkills.languages[0])
 
-// a) Your answer:
-// b) Verify and explain:
+// a) Your answer: "JavaScript"
+// b) Verify and explain: Correct. The code is selecting a property within myCodingSkills object that has a key of languages, and selecting index of 0 for languages.
+//Therefore the console.log() will output the first element of the array that is stored in languages.
 
 
 // --------------------STRETCH: What will this log?
@@ -71,7 +72,13 @@ class Learn {
   }
 }
 var learnStudent = new Learn("George")
-// console.log(learnStudent)
+console.log(learnStudent)
 
-// a) Your answer:
-// b) Verify and explain:
+// a) Your answer:{student: "George", cohort : "Delta", year: 2021}
+
+
+
+// b) Verify and explain: Incorrect. The output was Learn { student: 'George', cohort: 'Delta', year: 2021 }, 
+// The class "Learn" was used to create the new object and it is shown as part of the output.
+// The object generated has "student: George" because it used the input parameter of the constructor of class Learn, dynamic property.
+//The other properties (cohort, year) are identical to the class Learn because they are considered static/hard coded.

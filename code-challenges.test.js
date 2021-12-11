@@ -60,7 +60,7 @@ describe("divisibleByThree", () => {
 
 //Second Attempt after correctly spelling toEqual
 //First step 1:
-describe("divisibleByThree", () => {
+describe("divisibleByThree Function", () => {
 
     it("function takes an input value as an argument and outputs a string if it is or not divisible by three", () => {
 
@@ -70,7 +70,7 @@ describe("divisibleByThree", () => {
 //Test result failed (ReferenceError: divisibleByThree is not defined).
 
 //Implimenting a test for the other two cases, num2 & num3.
-describe("divisibleByThree", () => {
+describe("divisibleByThree Function", () => {
 
     it("function takes an input value as an argument and outputs a string if it is or not divisible by three", () => {
 
@@ -78,7 +78,7 @@ describe("divisibleByThree", () => {
     })
 });
 
-describe("divisibleByThree", () => {
+describe("divisibleByThree Function", () => {
 
     it("function takes an input value as an argument and outputs a string if it is or not divisible by three", () => {
 
@@ -105,7 +105,7 @@ describe("divisibleByThree", () => {
 
 //Step 3 refactor - optimize the code and make it clear, placed all expect in one it() and use ternary operator for function 
 
-describe("divisibleByThree", () => {
+describe("divisibleByThree Function", () => {
 
     it("function takes an input value as an argument and outputs a string if it is or not divisible by three", () => {
 
@@ -147,7 +147,7 @@ var randomNouns2 = ["temperature", "database", "chopsticks", "mango", "deduction
 
 
 //First step 1:
-describe("upperCaseArray", () => {
+describe("upperCaseArray Function", () => {
 
     it("function takes an input array as an argument and outputs an array with all capital letters", () => {
 
@@ -157,7 +157,7 @@ describe("upperCaseArray", () => {
 //Test result failed (ReferenceError: upperCaseArray is not defined).
 
 //Implimenting a test for randomNouns2.
-describe("upperCaseArray", () => {
+describe("upperCaseArray Function", () => {
 
     it("function takes an input array as an argument and outputs an array with all capital letters", () => {
 
@@ -179,7 +179,7 @@ upperCaseArray = (array) => {
 };
 
 //Step 3 optimize and make code clear, placed all expect in one it()
-describe("upperCaseArray", () => {
+describe("upperCaseArray Function", () => {
 
     it("function takes an input array as an argument and outputs an array with all capital letters", () => {
 
@@ -217,7 +217,7 @@ var vowelTester3 = "challenges"
 
 
 //First step 1:
-describe("firstVowel", () => {
+describe("firstVowel Function", () => {
 
     it("function takes an input string as an argument and outputs a number that represents the index of the first vowel in the string", () => {
 
@@ -227,7 +227,7 @@ describe("firstVowel", () => {
 //Test result failed (ReferenceError: firstVowel is not defined).
 
 //Implimenting a test for vowelTester2 and vowelTester3.
-describe("firstVowel", () => {
+describe("firstVowel Function", () => {
 
     it("function takes an input string as an argument and outputs a number that represents the index of the first vowel in the string", () => {
 
@@ -235,7 +235,7 @@ describe("firstVowel", () => {
     })
 });
 
-describe("firstVowel", () => {
+describe("firstVowel Function", () => {
 
     it("function takes an input string as an argument and outputs a number that represents the index of the first vowel in the string", () => {
 
@@ -277,7 +277,7 @@ firstVowel = (word) => {
 */
 
 //Step 3 optimize and make code clear, placed all expect in one it() and use .map on function to reduce code lines
-describe("firstVowel", () => {
+describe("firstVowel Function", () => {
 
     it("function takes an input string as an argument and outputs a number that represents the index of the first vowel in the string", () => {
 
@@ -290,8 +290,10 @@ describe("firstVowel", () => {
 
 firstVowel = (word) => {
 
-    // //Store the indices of all vowels in an array
+    // //Create an array that has all vowels a,e,i,o,u
     let vowels = ["a", "e", "i", "o", "u"]
+
+    //Store the indices of all vowels from "word" parameter that are encoutered, only first time vowels, in an array.
     let vowelArray = vowels.map(vowel => word.indexOf(vowel))
 
     //Filter to remove the index of -1 value because indexOf returns -1 when a vowel doesn't exist.
