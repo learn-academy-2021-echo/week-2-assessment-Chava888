@@ -45,7 +45,7 @@ The action of breaking down an object to its properites and methods. The destruc
 5. What is the difference between a class and an object?
 
   Your answer:
- An 
+ A class is a blueprint to create objects while an object containes key, properties, and methods. The differences is a class has a constructor while an object does not. Another difference is a class is considered generic while an object is unique.
 
 
   Researched answer:
@@ -55,6 +55,7 @@ The action of breaking down an object to its properites and methods. The destruc
 6. STRETCH: What is hoisting in JavaScript?
 
   Your answer:
+  Hoisting is the behavior of javascript to move declared functions and variables, which are undesignated, to the top of the script. Furthermore, hoisting allows the coder to invoke functions while the function is declared below the invocation within the script.
 
   Researched answer:
 
@@ -65,10 +66,13 @@ The action of breaking down an object to its properites and methods. The destruc
 Research and define the following terms to the best of your ability.
 
 1. Class Inheritance:
+The action of passing properties and methods from a parent class to the child class. In javascript the use of "extends" and "super()" allows the inheritence of properties and methods from a parent to child class.
 
 2. React:
+Is a javascript library for front-end that creates components by using jsx(javascript xml). React combines html, javascript, and css to create components. The components generated in react are independent and generic. In react we can write html within javascript and render components to build a website. 
 
 3. React state:
+
 
 4. React lifecycle methods:
 
