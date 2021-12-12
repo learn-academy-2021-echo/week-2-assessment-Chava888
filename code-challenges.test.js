@@ -25,8 +25,8 @@ var num3 = -7
 //Must do a red-green-refactor process:
 //First step make the test fail, expected to fail due to undefined function since function has not been defined.
 //Second step create the function, make the test pass.
-//Function will have conditional to verify value is divisible by three.
-//The conditional statement will be number % 3 === 0, therefore divisible by three.
+//Function will have a conditional to verify value is divisible by three.
+//The conditional statement will be number % 3 === 0, therefore divisible by three, else not divisible by three.
 //Third step refactor to optimize and make the code cleaner, make the test pass.
 
 /* =====Misspelled toEqual therefore test was not passing after defining a function======
@@ -93,7 +93,7 @@ describe("divisibleByThree Function", () => {
 
 //Function will have conditional statement to verify value is divisible by three.
 //The conditional statement will be number % 3 === 0, to check if divisible by three.
-//Outputs a string based on the boolean result.
+//Outputs a string based on the boolean result, possible outputs "is divisible by three" or "is not divisible by three".
 // divisibleByThree = (number) => {
 //     if (number % 3 === 0) {
 //         return `${number} is divisible by three`
@@ -115,9 +115,7 @@ describe("divisibleByThree Function", () => {
     })
 });
 
-divisibleByThree = (number) => {
-    return (number % 3 === 0 ? `${number} is divisible by three` : `${number} is not divisible by three`)
-}
+divisibleByThree = (number) => (number % 3 === 0 ? `${number} is divisible by three` : `${number} is not divisible by three`)
 
 
 
@@ -168,7 +166,8 @@ describe("upperCaseArray Function", () => {
 
 // b) Create the function that makes the test pass.
 //Function will consist of a .map() to loop all the elements in the array,
-// and .toUpperCase() to capitalize the first letter of each element in the array.
+//.toUpperCase() to capitalize the first letter of each element in the array.
+//The capitalized letter will be stored in a new variable.
 //.replace(existing, new) to replace the first letter of each element in the array with a capital letter.
 
 upperCaseArray = (array) => {

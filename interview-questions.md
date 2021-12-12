@@ -39,7 +39,7 @@ Extraction of properties from objects and assign them to distinct variables.
   Your answer: A function is a block of code, which is encapsulated, that manipulates data based on input arguments and returns an output. A method is identical to a function, however, the function is stored inside an object. A method is a function stored in an object therefore, a key is assign to the function and the key will be required to invoke the function. In contrast a normal function does not have a key and can be invoked anywhere within the function local scope.
 
   Researched answer:
-A method is similar to a function, however, difference is a method is stored in an object while a function is not. Furthermore, function can only work with the input arguments that we have provided while a method has access to the input arguments and properties of the associated object.
+A method is similar to a function, however, the difference is a method is stored in an object while a function is not. Furthermore, function can only work with the input arguments that we have provided while a method has access to the input arguments and properties of the associated object.
 
 
 5. What is the difference between a class and an object?
@@ -72,7 +72,7 @@ The action of passing properties and methods from a parent class to the child cl
 Is a javascript library for front-end that creates class and function components by using jsx(javascript xml). React combines html, javascript, and css to create components. The components generated in react are independent and generic. In react we can write html within javascript and render components to build websites, applications, etc. 
 
 3. React state:
-React state is an object within a React component that contains properties that may change, therefore, are not immutable. React tracks the object state properties and any changes to them. For class components, changes to states properties can be done by using setState(), which merges the changes to the properties. 
+React state is an object within a React component that contains properties that may change, therefore, are not immutable. React tracks the object state properties and any changes to them. For class components, changes to state properties can be done by using setState(), which merges the changes to the properties. 
 
 For hooks that are used in functional components, state can be any type of datatype that stores a single value. The state value in a hook can be changed by using useState() and a setState variable. In hooks, the state value is replaced and not merged, which is a contrast to a class component.
 
